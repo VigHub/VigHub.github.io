@@ -1,14 +1,46 @@
 * {margin: 0; padding: 0;}
-#contacts {margin: auto; width:25%; font-size: 0;}
-#mail, #github, #bitbucket {
-    margin-bottom: 1em;
-    width:33%;
-    display: inline-block;
-    *display: inline; 
-    zoom: 1; 
-    vertical-align: top; 
-    font-size: 12px;
+#contacts {
+    /* margin: auto; */
+    align-content: center;
+    width:25%; 
+    font-size: 0;}
+#up{
+    margin: 5em;
+    /* height: 15em; */
+    /* float: left; */
 }
+#post-content {
+    margin-left: 5em 
+}
+
+
+#profiles {
+    height: 60px;
+    vertical-align: middle;
+    margin-left: 5em;
+}
+
+#profiles .item {
+    float: left;
+    vertical-align: top;
+    margin-right: 1em;
+}
+#tel {
+    float: left;
+    margin-left: 4.7em; 
+}
+
+.item {
+    margin-bottom: 1em;
+}
+
+#img{
+    float: right;
+    margin-right: 25em;
+    max-width: 15%;
+}
+
+
 hr.style2 {
 	border-top: 3px double #8c8b8b;
 }
