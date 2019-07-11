@@ -4,40 +4,44 @@
     align-content: center;
     width:25%; 
     font-size: 0;}
-#up{
-    margin: 5em;
+/* #up{ */
+    /* margin: 5em; */
     /* height: 15em; */
     /* float: left; */
-}
-#post-content {
+/* } */
+/* #post-content {
     margin-left: 5em 
-}
+} */
 
 
 #profiles {
     height: 60px;
-    vertical-align: middle;
-    margin-left: 5em;
+    vertical-align: top;
+    /* margin-left: 5em; */
 }
 
-#profiles .item {
-    float: left;
-    vertical-align: top;
+#item {
+    /* float: left; */
+    /* vertical-align: top; */
     margin-right: 1em;
+    margin-left: 1em;
 }
-#tel {
+/* #tel {
     float: left;
     margin-left: 4.7em; 
-}
+} */
 
 .item {
     margin-bottom: 1em;
 }
 
-#img{
+/* #img{
     float: right;
     margin-right: 25em;
     max-width: 15%;
+} */
+#img{
+    height: 200px;
 }
 
 
