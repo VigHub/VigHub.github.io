@@ -4,14 +4,14 @@
 	</div> -->
 	<!-- Social network icons container -->
 	<div class="flex justify-center">
-		<a href="#!" class="mr-6">
+		<a href="https://stackoverflow.com/users/10415670/vighub" target="_blank" class="mr-6">
 			<img
 				class="h-4 w-4"
 				alt="stackoverflow"
 				src="https://www.vectorlogo.zone/logos/stackoverflow/stackoverflow-icon.svg"
 			/>
 		</a>
-		<a href="#!" class="mr-6">
+		<a href="https://leetcode.com/VigHub/" target="_blank" class="mr-6">
 			<svg
 				fill="currentColor"
 				class="h-4 w-4"
@@ -24,14 +24,14 @@
 			</svg>
 		</a>
 
-		<a href="#!" class="mr-6">
+		<a href="https://www.linkedin.com/in/vighub/" target="_blank" class="mr-6">
 			<img
 				class="h-4 w-4"
 				alt="linkedin"
 				src="https://www.vectorlogo.zone/logos/linkedin/linkedin-tile.svg"
 			/>
 		</a>
-		<a href="#!" class="mr-6">
+		<a href="https://github.com/VigHub" target="_blank" class="mr-6">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				class="h-4 w-4"
