@@ -17,15 +17,18 @@
 	const textArray = splitStr();
 </script>
 
-<Typewriter {interval} {delay} mode="cascade">
+<Typewriter {interval} {delay} mode="cascade" >
 	<span class="text-light">
 		{#each textArray as char}
-			<span style="font-size: {fontSize}px;" class="letter">{char}</span>
+			<span
+				style="font-size: {fontSize}px;"
+				class="letter dark:hover:text-[#0FBA81] hover:text-[#0b7caf]">{char}</span
+			>
 		{/each}
 	</span>
 </Typewriter>
 
-<style lang="css">
+<style lang="postcss">
 	:root {
 		--cursor-width: 10px;
 		--cursor-color: var(--color-primary-800);
@@ -69,7 +72,6 @@
 	}
 
 	.letter:hover {
-		color: var(--color-primary-800);
 		font-weight: bold;
 		animation: rubberBand 1s;
 	}

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Avatar, LightSwitch } from '@skeletonlabs/skeleton';
 	import Li from './Li.svelte';
+	import SocialIcons from '$lib/SocialIcons.svelte';
 </script>
 
 <nav
@@ -9,12 +10,13 @@
 	<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 		<Avatar
 			src="/src/images/Gianlu.jpg"
-			width="w-16"
+			width="w-10"
 			rounded="rounded-full"
 			border="border-2 border-surface-300-600-token hover:!border-primary-500"
 			cursor="cursor-pointer"
 		/>
 		<div class="flex md:order-2">
+			<SocialIcons />
 			<LightSwitch />
 		</div>
 		<div

@@ -1,13 +1,12 @@
-<div class="flex justify-between items-center">
-	<p class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+<div class="absolute bottom-0 right-0 px-4 no-underline">
+	<p class="text-gray-500  dark:text-gray-400 end-1" style="font-size: 8pt">
 		Made with
 		<span class="inline-flex items-baseline">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				fill="red"
 				viewBox="0 0 24 24"
-				stroke="currentColor"
-				class="w-4 h-4"
+				class="w-3 h-3"
 				display="inline-block"
 			>
 				<path
@@ -17,7 +16,7 @@
 				/>
 			</svg>
 		</span>
-		and <a href="https://kit.svelte.dev/" class="hover:underline">SvelteKit</a>. All Rights
+		and <a href="https://kit.svelte.dev/" style="text-decoration: none">SvelteKit</a>. All Rights
 		Reserved.
 	</p>
 </div>

@@ -7,10 +7,9 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 
+	import Copyright from '$lib/structure/Copyright.svelte';
+	import Navbar from '$lib/structure/Navbar.svelte';
 	import { AppBar, AppShell } from '@skeletonlabs/skeleton';
-	import Footer from '$lib/Footer.svelte';
-	import Navbar from '$lib/Navbar.svelte';
-	import SocialIcons from '$lib/SocialIcons.svelte';
 </script>
 
 <AppShell>
@@ -21,10 +20,5 @@
 	</svelte:fragment>
 
 	<slot />
-	<svelte:fragment slot="footer">
-		<AppBar>
-			<svelte:fragment slot="lead"><Footer /></svelte:fragment>
-			<svelte:fragment slot="trail"><SocialIcons /></svelte:fragment>
-		</AppBar>
-	</svelte:fragment>
+	<svelte:fragment slot="footer"><Copyright /></svelte:fragment>
 </AppShell>
