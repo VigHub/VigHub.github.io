@@ -6,7 +6,7 @@
 	<div class="flex justify-center">
 		<a href="https://stackoverflow.com/users/10415670/vighub" target="_blank" class="mr-6">
 			<img
-				class="h-4 w-4"
+				class="h-4 w-4 resize-none"
 				alt="stackoverflow"
 				src="https://www.vectorlogo.zone/logos/stackoverflow/stackoverflow-icon.svg"
 			/>

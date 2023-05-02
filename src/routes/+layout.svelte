@@ -50,17 +50,21 @@
 				</button>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<SocialIcons />
-				<a href="/about">
-					<Avatar
-						src="/images/Gianlu.jpg"
-						width="w-10"
-						rounded="rounded-full"
-						border="border-2 border-surface-300-600-token hover:!border-primary-500"
-						cursor="cursor-pointer"
-					/>
-				</a>
-				<LightSwitch />
+				<div class=" flex items-center md:hidden">
+					<SocialIcons />
+					<a href="/about">
+						<Avatar
+							src="/images/Gianlu.jpg"
+							width="w-10"
+							rounded="rounded-full"
+							border="border-2 border-surface-300-600-token hover:!border-primary-500"
+							cursor="cursor-pointer"
+						/>
+					</a>
+					<div class="ml-3">
+						<LightSwitch />
+					</div>
+				</div>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
