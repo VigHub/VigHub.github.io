@@ -1,10 +1,8 @@
 <script>
 	import AnimatedLetters from '$lib/AnimatedLetters.svelte';
 
-	let fontSize = 80;
+	let fontSize = 30;
 </script>
-
-<!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
 
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-5">
@@ -15,13 +13,26 @@
 			<li><code>/src/app.postcss</code> - minimal css to make the page full screen, may not be relevant for your project</li>
 			<li><code>/src/routes/+page.svelte</code> - this page, you can replace the contents</li>
 		</ul> -->
-		<div class="presentation">
-			<AnimatedLetters {fontSize} text="Hi!" />
-			<div class="space" style="margin: 15px;" />
-			<div class="name">
-				<AnimatedLetters {fontSize} text="I'm" delay={2000} />
-				<div class="space" style="padding-right: 10px;" />
-				<AnimatedLetters {fontSize} text="Gianluca" delay={2500} />
+		<div class="hidden md:block">
+			<div class="presentation">
+				<AnimatedLetters fontSize={70} text="Hi!" />
+				<div class="space" style="margin: 15px;" />
+				<div class="name">
+					<AnimatedLetters fontSize={70} text="I'm" delay={2000} />
+					<div class="space" style="padding-right: 10px;" />
+					<AnimatedLetters fontSize={70} text="Gianluca" delay={2500} />
+				</div>
+			</div>
+		</div>
+		<div class="md:hidden">
+			<div class="presentation">
+				<AnimatedLetters fontSize={30} text="Hi!" />
+				<div class="space" style="margin: 15px;" />
+				<div class="name">
+					<AnimatedLetters fontSize={30} text="I'm" delay={2000} />
+					<div class="space" style="padding-right: 10px;" />
+					<AnimatedLetters fontSize={30} text="Gianluca" delay={2500} />
+				</div>
 			</div>
 		</div>
 	</div>
