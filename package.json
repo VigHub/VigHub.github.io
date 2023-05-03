@@ -38,6 +38,7 @@
 	"type": "module",
 	"dependencies": {
 		"gh-pages": "^5.0.0",
+		"svelte-forms": "^2.3.1",
 		"svelte-typewriter": "^3.1.6"
 	}
 }
