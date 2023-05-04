@@ -60,7 +60,7 @@
 					<div class="dark:text-error-400 text-error-500">Don't you want to write me anything?</div>
 				{/if}
 			</label>
-			<button on:click={handleSubmit} class="btn variant-ghost-primary relative left-[90%]"
+			<button on:click={handleSubmit} class="btn variant-ghost-primary float-right"
 				>Send</button
 			>
 		</form>
