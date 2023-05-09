@@ -20,7 +20,7 @@
 		<div class="md:hidden">
 			<div class="presentation">
 				<AnimatedLetters fontSize={30} text="Hi!" />
-				<div class="space" style="margin: 15px;" />
+				<div class="md:m-4 m-2" />
 				<div class="name">
 					<AnimatedLetters fontSize={30} text="I'm" delay={2000} />
 					<div class="space" style="padding-right: 10px;" />
