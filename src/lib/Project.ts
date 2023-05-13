@@ -4,4 +4,5 @@ export interface ProjectType {
     title: string;
     date: string;
     technologies: string[];
+    link: string;
 }

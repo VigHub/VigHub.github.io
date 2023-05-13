@@ -1,0 +1,28 @@
+[
+    {
+        "date": "March 2023",
+        "image": "gcloud-logo.png",
+        "title": "ABB & Google Cloud Hackathon",
+        "description": "Placed at second place in a three day hackathon, held at Google Zurich headquarters. Used Vertex AI, Looker Studio and BigQuery tables for developing a cloud web app for monitoring and doing predictive maintenance of a motor pool.",
+        "technologies": [
+            "gcloud",
+            "Vertex AI",
+            "Looker Studio",
+            "BigQuery"
+        ],
+        "link": ""
+    },
+    {
+        "date": "Jan - Jul 2020",
+        "image": "drone.jpg",
+        "title": "Drone Control with Pose Estimation",
+        "description": "Developed software for controlling a DJITello drone through facial and human poses recognition, framed by drone camera. Modified a pose estimation library that uses pretrained gpu computer visions models for correctly estimating human faces even in dark conditions.",
+        "technologies": [
+            "python",
+            "opencv",
+            "tf-pose",
+            "computer vision"
+        ],
+        "link": "https://github.com/yousszr/Dji-TelloPy-PoseEstimation-FaceTracking"
+    }
+]
