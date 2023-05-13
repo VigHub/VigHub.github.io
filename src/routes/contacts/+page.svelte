@@ -38,7 +38,7 @@
 					<div class="dark:text-error-400 text-error-500">Your email is required</div>
 				{/if}
 				{#if $emailForm.hasError('mail.not_an_email') && clicked > 0}
-					<div class="dark:text-error-400 text-error-500">Write a valid email</div>
+					<div class="dark:text-error-400 text-error-500">Write a valid email address</div>
 				{/if}
 			</label>
 			<label class="label m-3">

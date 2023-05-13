@@ -14,6 +14,10 @@
 	import NavbarMobile from '$lib/structure/NavbarMobile.svelte';
 </script>
 
+<svelte:head>
+	<title>VigHub</title>
+</svelte:head>
+
 <AppShell>
 	<svelte:fragment slot="header">
 		<Navbar />
