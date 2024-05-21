@@ -1,13 +1,14 @@
 <script lang="ts">
+	import moment from 'moment';
 	import type { ProjectType } from './Project';
 
 	export let project: ProjectType;
 </script>
 
-<div class="max-w-sm w-full lg:max-w-full lg:flex card-hover5 hover:scale-105 duration-1000">
+<div class="max-w-sm w-full lg:max-w-full lg:flex card-hover5 hover:scale-105 duration-500">
 	<div
 		class="h-48 lg:h-auto lg:w-56 flex-none bg-cover bg-center lg:rounded-l-2xl text-center overflow-hidden"
-		style="background-image: url('/images/{project.image}')"
+		style="background-image: url('{project.image}')"
 		title="Project {project.title} image"
 	/>
 	<a href={project.link} class="unstyled">
@@ -30,7 +31,7 @@
 						/>
 					</svg>
 
-					{project.date}
+					{moment(project.date).format('MMMM YYYY')}
 				</p>
 				<div class=" font-bold text-xl mb-2">{project.title}</div>
 				<p class="text-base">

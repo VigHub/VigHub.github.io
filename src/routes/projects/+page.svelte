@@ -1,9 +1,10 @@
 <script lang="ts">
 	import type { ProjectType } from '$lib/Project';
 	import Project from '$lib/Project.svelte';
-	import project_data from './projects_data.json';
+	import type { PageData } from './$types';
 
-	let projects: Array<ProjectType> = project_data;
+	export let data: PageData;
+	const projects = data.projects as ProjectType[];
 </script>
 
 <div class="h-full m-3 flex justify-center items-center">
