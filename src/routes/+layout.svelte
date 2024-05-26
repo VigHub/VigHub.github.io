@@ -28,5 +28,5 @@
 	</svelte:fragment>
 
 	<slot />
-	<svelte:fragment slot="footer"><Copyright /></svelte:fragment>
+	<svelte:fragment slot="pageFooter"><Copyright /></svelte:fragment>
 </AppShell>
