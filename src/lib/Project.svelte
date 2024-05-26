@@ -28,8 +28,8 @@
 	<footer class="p-4 pt-1 flex justify-start items-center space-x-4">
 		<!-- <Avatar src={getImageLink({ id: 'YOErFW8AfkI', w: 32, h: 32 })} width="w-8" /> -->
 		<div
-			class="grid grid-cols-2 md:grid-cols-{project.technologies
-				.length} md:gap-x-1 gap-x-1 gap-y-2 w-full"
+			class="grid grid-cols-2 md:gap-x-1 gap-x-1 gap-y-2 w-full
+			 md:grid-cols-{project.technologies.length} "
 		>
 			{#each project.technologies as tech}
 				<span class="chip max-w-[150px] variant-ghost-primary hover:variant-filled">{tech}</span>
