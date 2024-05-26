@@ -3,8 +3,9 @@
 
 	export let text = 'Text';
 	export let fontSize = 30;
-	export let interval = 65;
-	export let delay = 1000;
+	export let interval = 35;
+	export let delay = 700;
+	export let keepCursorOnFinish = false;
 
 	const splitStr = () => {
 		const arr = [];
@@ -17,7 +18,7 @@
 	const textArray = splitStr();
 </script>
 
-<Typewriter {interval} {delay} mode="cascade" >
+<Typewriter {interval} {delay} mode="cascade" cursor {keepCursorOnFinish}>
 	<span class="text-light">
 		{#each textArray as char}
 			<span
@@ -31,7 +32,7 @@
 <style lang="postcss">
 	:root {
 		--cursor-width: 10px;
-		--cursor-color: var(--color-primary-800);
+		--cursor-color: gray;
 	}
 
 	@keyframes rubberBand {

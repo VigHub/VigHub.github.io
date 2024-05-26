@@ -1,5 +1,5 @@
-<div class="absolute bottom-0 right-0 px-4 no-underline">
-	<p class="text-gray-500  dark:text-gray-400 end-1" style="font-size: 8pt">
+<div class="mt-4 text-right px-4 no-underline">
+	<p class="text-gray-500 dark:text-gray-400 end-1" style="font-size: 8pt">
 		Made with
 		<span class="inline-flex items-baseline">
 			<svg

@@ -1,52 +1,62 @@
-<script>
-	import AnimatedLetters from '$lib/AnimatedLetters.svelte';
-
-	let fontSize = 30;
+<script lang="ts">
+	import NamePresentation from '$lib/NamePresentation.svelte';
+	import SkillTitle from '$lib/SkillTitle.svelte';
+	import { fade, fly } from 'svelte/transition';
+	import AnimateOnLoad from '$lib/AnimateOnLoad.svelte';
 </script>
 
-<div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-5">
+<div class="hidden md:block h-full w-full mx-auto">
+	<div class="h-1/2 min-w-[50%] flex justify-center items-center">
 		<div class="hidden md:block">
-			<div class="presentation">
-				<AnimatedLetters fontSize={70} text="Hi!" />
-				<div class="space" style="margin: 15px;" />
-				<div class="name">
-					<AnimatedLetters fontSize={70} text="I'm" delay={2000} />
-					<div class="space" style="padding-right: 10px;" />
-					<AnimatedLetters fontSize={70} text="Gianluca" delay={2500} />
-				</div>
-			</div>
-		</div>
-		<div class="md:hidden">
-			<div class="presentation">
-				<AnimatedLetters fontSize={30} text="Hi!" />
-				<div class="md:m-4 m-2" />
-				<div class="name">
-					<AnimatedLetters fontSize={30} text="I'm" delay={2000} />
-					<div class="space" style="padding-right: 10px;" />
-					<AnimatedLetters fontSize={30} text="Gianluca" delay={2500} />
-				</div>
-			</div>
+			<NamePresentation />
 		</div>
 	</div>
+	<AnimateOnLoad>
+		<div class="w-full">
+			<div class="w-1/2 flex justify-center mx-auto space-x-5">
+				<div in:fly={{ delay: 3000, y: 100, duration: 2000 }} class="text-center">
+					<SkillTitle text="Software Engineer" />
+				</div>
+				<div in:fly={{ delay: 4000, y: 100, duration: 2000 }} class="text-center">
+					<SkillTitle text="Machine Learning Engineer" />
+				</div>
+				<div in:fly={{ delay: 5000, y: 100, duration: 2000 }} class="text-center">
+					<SkillTitle text="Enthusiastic Learner" />
+				</div>
+			</div>
+		</div>
+		<div in:fade={{ delay: 6500, duration: 500 }} class="w-full">
+			<div class="flex justify-center mx-auto">
+				<img class="w-96" src="gifs/coder-transparent.gif" alt="coder" />
+				<!-- <img class="w-96" src="gifs/neural-network-transparent.gif" alt="coder" /> -->
+			</div>
+		</div>
+	</AnimateOnLoad>
 </div>
 
-<style>
-	@keyframes fadeIn {
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	}
-
-	.presentation {
-		margin: 30px;
-		display: inline-flex;
-	}
-
-	.name {
-		display: inline-flex;
-	}
-</style>
+<div class="md:hidden h-full w-full mx-auto">
+	<div class="h-1/3 min-w-[50%] flex justify-center items-center">
+		<NamePresentation lg={false} />
+	</div>
+	<AnimateOnLoad>
+		<div class="w-full text-center -mt-5">
+			<div class="mx-auto space-y-3">
+				<div in:fly={{ delay: 3000, x: -100, duration: 2000 }} class="text-center">
+					<SkillTitle text="Software Engineer" />
+				</div>
+				<div in:fly={{ delay: 4000, x: 100, duration: 2000 }} class="text-center">
+					<SkillTitle text="Machine Learning Engineer" />
+				</div>
+				<div in:fly={{ delay: 5000, y: 100, duration: 2000 }} class="text-center">
+					<SkillTitle text="Enthusiastic Learner" />
+				</div>
+			</div>
+		</div>
+		<div in:fade={{ delay: 6500, duration: 500 }} class="w-full">
+			<div class="flex justify-center mx-auto">
+				<img class="w-96" src="gifs/coder-transparent.gif" alt="coder" />
+				<!-- <img class="w-96" src="gifs/neural-network-transparent.gif" alt="coder" /> -->
+			</div>
+		</div>
+	</AnimateOnLoad>
+</div>
