@@ -3,6 +3,8 @@
 	import { required, email, min } from 'svelte-forms/validators';
 	import { Toast, toastStore } from '@skeletonlabs/skeleton';
 	import type { ToastSettings } from '@skeletonlabs/skeleton';
+	import { addMessage } from '$lib/db';
+	import type { MessageType } from '$lib/interfaces';
 
 	const mail = field('mail', '', [min(1), required(), email()]);
 	const subject = field('subject', '', [required()]);
@@ -11,18 +13,32 @@
 
 	const emailForm = form(mail, subject, emailContent);
 
-	const toastSettings: ToastSettings = {
+	const toastSuccess: ToastSettings = {
 		message: 'Email sent successfully!',
-		timeout: 7000,
+		timeout: 7000
+	};
+	const toastError: ToastSettings = {
+		message: 'Error sending email',
+		timeout: 7000
 	};
 
-	const handleSubmit = () => {
+	const handleSubmit = async () => {
 		clicked += 1;
 		emailForm.validate();
 		if ($emailForm.dirty && $emailForm.valid) {
 			clicked = 0;
-			emailForm.reset();
-			toastStore.trigger(toastSettings);
+			const message: MessageType = {
+				email: $mail.value,
+				subject: $subject.value,
+				content: $emailContent.value
+			};
+			const { error } = await addMessage(message);
+			if (error) {
+				toastStore.trigger(toastError);
+			} else {
+				emailForm.reset();
+				toastStore.trigger(toastSuccess);
+			}
 		}
 	};
 </script>
@@ -60,9 +76,7 @@
 					<div class="dark:text-error-400 text-error-500">Don't you want to write me anything?</div>
 				{/if}
 			</label>
-			<button on:click={handleSubmit} class="btn variant-ghost-primary float-right"
-				>Send</button
-			>
+			<button on:click={handleSubmit} class="btn variant-ghost-primary float-right">Send</button>
 		</form>
 		<Toast />
 	</div>
