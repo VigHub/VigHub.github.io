@@ -1,1 +1,0 @@
-import{w as i}from"./writeAndUnwriteText.d6d5d576.js";import{a as n,m}from"./animationSetup.bd711b5d.js";const p=async(t,e)=>{const{options:o,elements:a}=n(t,e);for(;;){m(t);for(const s of a)await i(s,o)}};export{p as default};
