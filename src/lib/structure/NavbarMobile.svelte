@@ -9,16 +9,16 @@
 	} from '@skeletonlabs/skeleton';
 
 	const drawerSettings: DrawerSettings = {
-		id: 'example-3',
+		id: 'drawerPersonalSite',
 		// Provide your property overrides:
-		// bgDrawer: 'bg-secondary-300 text-white',
-
-		bgBackdrop:
-			'bg-gradient-to-tr dark:from-indigo-500/50 dark:via-purple-500/50 dark:to-pink-500/50 ' +
-			'from-green-500/50 via-purple-500/50 to-red-500/50',
-		width: 'w-[280px]',
+		bgDrawer: 'bg-[#f5f5f7] dark:bg-black border-r border-gray-200 dark:border-gray-800',
+		bgBackdrop: 'bg-black/50 dark:bg-black/20',
+		// bgBackdrop:
+		// 	'bg-gradient-to-tr dark:from-indigo-500/50 dark:via-purple-500/50 dark:to-pink-500/50 ' +
+		// 	'from-green-500/50 via-purple-500/50 to-red-500/50',
+		width: 'w-[330px]',
 		padding: 'p-4',
-		rounded: 'rounded-xl',
+		rounded: 'rounded-xl'
 	};
 
 	const drawerOpen = () => {
@@ -26,7 +26,7 @@
 	};
 </script>
 
-<AppBar>
+<AppBar background="bg-[#f5f5f7] dark:bg-black" padding="p-3">
 	<svelte:fragment slot="lead">
 		<button class="md:hidden btn btn-sm mr-4" on:click={drawerOpen}>
 			<svg
@@ -53,7 +53,7 @@
 					src="/images/Gianlu.jpg"
 					width="w-10"
 					rounded="rounded-full"
-					border="border-2 border-surface-300-600-token hover:!border-primary-500"
+					border="border-2 border-surface-300-600-token dark:hover:!border-primary-500 hover:!border-[#0b7caf]"
 					cursor="cursor-pointer"
 				/>
 			</a>

@@ -9,7 +9,7 @@
 	const aStyle = '!no-underline !text-black dark:!text-white';
 	$: classesActive = (href: string) =>
 		href === $page.url.pathname
-			? 'bg-[#f1f5f9] dark:bg-[#334155] border-sky-700 dark:border-emerald-500 border-x-2'
+			? 'bg-black text-white dark:bg-gray-50 dark:text-black  dark:border-emerald-500 border'
 			: '';
 </script>
 

@@ -4,17 +4,17 @@
 	import SocialIcons from '$lib/SocialIcons.svelte';
 </script>
 
-<AppBar slotDefault="place-self-center" class="hidden md:block">
+<AppBar slotDefault="place-self-center " class="hidden md:block" padding="p-0">
 	<nav
-		class="bg-surface-100 dark:bg-surface-800 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
+		class="fixed w-full border-b dark:border-gray-800 z-20 bg-opacity-70 backdrop-filter backdrop-blur-lg"
 	>
-		<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+		<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1">
 			<a href="/about">
 				<Avatar
 					src="/images/Gianlu.jpg"
 					width="w-10"
 					rounded="rounded-full"
-					border="border-2 border-surface-300-600-token hover:!border-primary-500"
+					border="border-2 border-surface-300-600-token dark:hover:!border-primary-500 hover:!border-[#0b7caf]"
 					cursor="cursor-pointer"
 				/>
 			</a>

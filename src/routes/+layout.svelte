@@ -18,7 +18,7 @@
 	<title>VigHub</title>
 </svelte:head>
 
-<AppShell>
+<AppShell regionPage="bg-[#f5f5f7] dark:bg-black" slotHeader="bg-red-500">
 	<svelte:fragment slot="header">
 		<Navbar />
 		<NavbarMobile />
