@@ -39,9 +39,12 @@
 	"type": "module",
 	"dependencies": {
 		"@supabase/supabase-js": "^2.43.2",
+		"clsx": "^2.1.1",
 		"gh-pages": "^5.0.0",
 		"moment": "^2.30.1",
 		"svelte-forms": "^2.3.1",
-		"svelte-typewriter": "^3.1.6"
+		"svelte-motion": "^0.12.2",
+		"svelte-typewriter": "^3.1.6",
+		"tailwind-merge": "^2.3.0"
 	}
 }
