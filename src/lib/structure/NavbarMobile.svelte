@@ -13,9 +13,6 @@
 		// Provide your property overrides:
 		bgDrawer: 'bg-[#f5f5f7] dark:bg-black border-r border-gray-200 dark:border-gray-800',
 		bgBackdrop: 'bg-black/50 dark:bg-black/20',
-		// bgBackdrop:
-		// 	'bg-gradient-to-tr dark:from-indigo-500/50 dark:via-purple-500/50 dark:to-pink-500/50 ' +
-		// 	'from-green-500/50 via-purple-500/50 to-red-500/50',
 		width: 'w-[330px]',
 		padding: 'p-4',
 		rounded: 'rounded-xl'
