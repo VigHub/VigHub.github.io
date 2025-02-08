@@ -2,6 +2,7 @@
 	import { CardBody, CardContainer, CardItem } from '$lib/3DCard';
 	import { type ProjectType } from '$lib/interfaces';
 	import moment from 'moment';
+	import { listen } from 'svelte/internal';
 
 	export let project: ProjectType;
 	let isMouseEntered = false;
@@ -18,13 +19,15 @@
 		</CardItem>
 
 		<CardItem {isMouseEntered} translateZ="100" className="w-full mt-4">
-			<img
-				src={project.image}
-				height="1000"
-				width="1000"
-				class="h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl"
-				alt="thumbnail"
-			/>
+			<a href={project.link}>
+				<img
+					src={project.image}
+					height="1000"
+					width="1000"
+					class="h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl"
+					alt="thumbnail"
+				/>
+			</a>
 		</CardItem>
 		<CardItem
 			{isMouseEntered}

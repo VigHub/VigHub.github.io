@@ -13,7 +13,7 @@
 			opacity: 1,
 			transition: {
 				delay: i * delayWords + initialDelay,
-				duration: 2
+				duration: 1.5
 			}
 		}),
 		hidden: { opacity: 0 }

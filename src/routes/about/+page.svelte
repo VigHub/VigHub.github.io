@@ -27,17 +27,35 @@
 		{:else if textIndex === 1}
 			<h2>Education</h2>
 			<TextGenerateEffect
-				textClass=""
-				words="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia maxime fugiat, rerum
-				quam maiores magni harum minima eius voluptas, minus sint quos, culpa officia iusto sapiente
-				doloribus earum velit."
+				words="As I delved deeper into the world of technology, I realized that the real magic wasn't
+			just in flashy visuals but in the intelligence behind them. How does a system recognize a 
+			face? How can an algorithm predict what I'll type before I even finish my thought? These
+			questions pulled me into the fascinating world of Artificial Intelligence."
+			/>
+			<TextGenerateEffect
+				initialDelay={10}
+				words="That curiosity led me straight into the world of Computer Engineering, where I could turn my love for problem-solving into something real."
+			/>
+			<TextGenerateEffect
+				initialDelay={13}
+				words="I pursued my Bachelor's and Master's degrees in Computer Science and Engineering at 
+				the University of Bergamo, diving deep into automation, robotics, and data analysis. My 
+				thesis on fault detection using data-driven models opened my eyes to the power of AI in 
+				industrial systems. Wanting to push further, I specialized in Data Science and AI for 
+				Industrial Systems at the Polytechnic University of Turin, mastering machine learning, 
+				predictive modeling, and optimization."
 			/>
 		{:else if textIndex === 2}
 			<h2>Passions</h2>
 			<TextGenerateEffect
-				words="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia maxime fugiat, rerum
-				quam maiores magni harum minima eius voluptas, minus sint quos, culpa officia iusto sapiente
-				doloribus earum velit."
+				words="Now, I spend my time building models that uncover hidden patterns, teaching machines to “think” (or at least fake it convincingly), and solving problems that once seemed like science fiction. Whether it's designing fault detection systems, optimizing machine learning pipelines, or debating whether AI will ever understand sarcasm, my curiosity keeps pushing me forward."
+			/>
+			<TextGenerateEffect
+				initialDelay={10}
+				words="But let's be honest—I don't just compete with algorithms. I'm highly competitive by 
+				nature, whether it's fine-tuning a machine learning model or chasing a football on the field.
+				Football has taught me strategy, teamwork, and the thrill of never backing down from a 
+				challenge—qualities that I bring into my work every day. Because whether it's in AI or on the pitch, I play to win."
 			/>
 		{:else}
 			<h2>404</h2>
