@@ -21,7 +21,8 @@
                 "Looker Studio",
                 "BigQuery"
             ],
-            "image": "/images/google-cloud.jpg"
+            "image": "/images/google-cloud.jpg",
+            "link": ""
         },
         {
             "title": "Drone Control with Pose Estimation",
